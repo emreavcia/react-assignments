@@ -15,6 +15,22 @@
       "email": "mirjam@hicoders.ch",
       "password": "s34ret",
       "about": "I am crazy!"
+    },
+    {
+      "id": 4,
+      "firstName": "Emre",
+      "lastName": "AVCI",
+      "email": "avciemrea@gmail.com",
+      "password": "45745",
+      "about": "redsfs"
+    },
+    {
+      "id": 5,
+      "firstName": "Mustafa",
+      "lastName": "Oz",
+      "email": "ozrea@gmail.com",
+      "password": "7548554",
+      "about": "adfa"
     }
   ]
 }

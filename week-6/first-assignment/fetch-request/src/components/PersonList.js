@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PersonList = () => {
+const PersonList = ({ employees }) => {
     return (
         <div className='col-9 mt-5'>
             <h2 className='bg-primary text-white text-center'>PERSON LIST</h2>
@@ -24,7 +24,7 @@ const PersonList = () => {
                                     <td>{employee.email}</td>
                                     <td>{employee.password}</td>
                                     <td>{employee.about}</td>
-                                    <td><button onClick={() => handleDelete(employee.id)} className='bg-primary text-white'>Delete</button></td>
+                                    <td><button className='bg-primary text-white'>Delete</button></td>
                                 </tr>
                             )
                         })
