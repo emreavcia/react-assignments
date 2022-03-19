@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AddPerson from "./components/AddPerson";
 import PersonList from "./components/PersonList";
+import { URL } from "./config"
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   const [isPending, setIsPending] = useState(true)
   const [error, setError] = useState(null)
 
-  const URL = "http://localhost:3001/employees"
+
 
   const getData = async () => {
     const response = await fetch(URL)
@@ -28,8 +29,6 @@ function App() {
     }
   }
 
-
-
   useEffect(() => {
     getData()
   }, [])
@@ -46,6 +45,8 @@ function App() {
       {employees &&
         <PersonList
           employees={employees}
+          getData={getData}
+          URL={URL}
         />}
     </div>
   );

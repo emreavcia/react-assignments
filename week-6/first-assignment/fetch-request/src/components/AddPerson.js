@@ -2,14 +2,16 @@ import React, { useState } from 'react'
 
 const AddPerson = ({ employees, getData, URL }) => {
 
-    const [newEployee, setNewEmployee] = useState({
+    const emptyNewPersonObject = {
         id: 0,
         firstName: "",
         lastName: "",
         email: "",
         password: "",
         about: ""
-    })
+    }
+
+    const [newEployee, setNewEmployee] = useState(emptyNewPersonObject)
 
     const handleChange = (event) => {
         const id = employees.length ? employees[employees.length - 1].id + 1 : 1
@@ -18,7 +20,6 @@ const AddPerson = ({ employees, getData, URL }) => {
             id,
             [event.target.name]: event.target.value,
         })
-
     }
 
     const postData = async () => {
