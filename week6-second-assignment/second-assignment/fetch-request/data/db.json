@@ -1,0 +1,36 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Meier",
+      "email": "john@hicoders.ch",
+      "password": "s34ret",
+      "about": "me about me"
+    },
+    {
+      "id": 2,
+      "firstName": "Mirjam",
+      "lastName": "Herrman",
+      "email": "mirjam@hicoders.ch",
+      "password": "s34ret",
+      "about": "I am crazy!"
+    },
+    {
+      "id": 3,
+      "firstName": "Savci",
+      "lastName": "AVCI",
+      "email": "savci@gmail.com",
+      "password": "25384512",
+      "about": "Duzgun bisey yaz buraya"
+    },
+    {
+      "id": 4,
+      "firstName": "Emre",
+      "lastName": "Avci ",
+      "email": "emre.avci@hicoders.js",
+      "password": "5895656",
+      "about": "Caliskan"
+    }
+  ]
+}
